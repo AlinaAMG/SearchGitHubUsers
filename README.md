@@ -10,16 +10,16 @@ Dit project is gebouwd met een moderne stack, gericht op snelheid, typeveilighei
 
 | Categorie | Technologie | Rol |
 
---| **Frontend** | React (Vite) | Snelle, lichte development omgeving en component-gebaseerde UI. |
---| **Taal** | TypeScript | Zorgt voor typeveiligheid en betere onderhoudbaarheid van de code. |
---| **Data Fetching** | Apollo Client | Efficiënte interactie met de GitHub GraphQL API. |
---| **Styling & Componenten** | Tailwind CSS / shadcn/ui | Utility-first CSS framework voor snelle styling, aangevuld met hoogwaardige UI-componenten. |
---| **Visualisatie** | **Recharts** | **Specialistische bibliotheek voor het renderen van de data-visualisaties.** |
+--| **Frontend** | React (Vite) | Snelle, lichte development omgeving en component-gebaseerde UI. 
+--| **Taal** | TypeScript | Zorgt voor typeveiligheid en betere onderhoudbaarheid van de code. 
+--| **Data Fetching** | Apollo Client | Efficiënte interactie met de GitHub GraphQL API. 
+--| **Styling & Componenten** | Tailwind CSS / shadcn/ui | Utility-first CSS framework voor snelle styling, aangevuld met hoogwaardige UI-componenten. 
+--| **Visualisatie** | **Recharts** | **Specialistische bibliotheek voor het renderen van de data-visualisaties.** 
 
 ## ✨ Kernfunctionaliteiten
 
 ### 1. Gebruikers zoeken
-* Snel zoeken op GitHub gebruikersnaam.
+* Snel zoeken op GitHub gebruikersnaam
 * Directe toegang tot het GitHub-profiel van de gebruiker.
 
 ### 2. Overzichtskaart (Card)
