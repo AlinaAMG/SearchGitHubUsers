@@ -1,73 +1,45 @@
-# React + TypeScript + Vite
+# 🧑‍💻 GitHub User Insight Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React-ApolloClientApp](https://github.com/AlinaAMG/SearchGitHubUsers/blob/master/public/dashboard.png)
 
-Currently, two official plugins are available:
+Dit is een compacte, moderne webapplicatie voor het zoeken en analyseren van GitHub-gebruikersprofielen. De applicatie maakt gebruik van de krachtige GitHub GraphQL API om real-time gebruikersstatistieken op te halen en te visualiseren via interactieve datavisualisaties (charts).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Technologieën
 
-## React Compiler
+Dit project is gebouwd met een moderne stack, gericht op snelheid, typeveiligheid en een uitstekende gebruikerservaring.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Categorie | Technologie | Rol |
 
-## Expanding the ESLint configuration
+| **Frontend** | React (Vite) | Snelle, lichte development omgeving en component-gebaseerde UI. |
+| **Taal** | TypeScript | Zorgt voor typeveiligheid en betere onderhoudbaarheid van de code. |
+| **Data Fetching** | Apollo Client | Efficiënte interactie met de GitHub GraphQL API. |
+| **Styling & Componenten** | Tailwind CSS / shadcn/ui | Utility-first CSS framework voor snelle styling, aangevuld met hoogwaardige UI-componenten. |
+| **Visualisatie** | **Recharts** | **Specialistische bibliotheek voor het renderen van de data-visualisaties.** |
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Kernfunctionaliteiten
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 1. Gebruikers zoeken
+* Snel zoeken op GitHub gebruikersnaam.
+* Directe toegang tot het GitHub-profiel van de gebruiker.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 2. Overzichtskaart (Card)
+* Toont de profielfoto, naam en een directe link naar het GitHub-profiel.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 3. Gedetailleerde Statistieken
+Het profiel toont de belangrijkste metrieken van de gebruiker:
+* Total Repositories
+* Followers
+* Following
+* Gists
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 4. Data Visualisaties (Charts)
+De kern van de applicatie is de data-analyse, gepresenteerd in drie duidelijke grafieken:
+1.  **Used Languages:** Een overzicht van de meest gebruikte programmeertalen in de publieke repositories van de gebruiker.
+2.  **Popular Repositories:** Visualisatie van repositories op basis van populariteit (bijv. aantal sterren of forks).
+3.  **Forked Repos:** Inzicht in de repositories die de gebruiker heeft geforkt.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Vereisten
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+* **Node.js:** Vereist voor het uitvoeren van `npm`/`yarn` en de Vite development server.
+*  **Een code-editor** (zoals VS Code)
+* **GitHub Personal Access Token (PAT):** Noodzakelijk voor authenticatie bij de GitHub API.
